@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zafran – Royal Mughlai Restaurant in Nagpur. 100% Halaal authentic Mughlai cuisine, fresh chicken & mutton, veg delicacies. Luxury dining experience at Awasthi Chowk, Jafar Nagar.">
+  <meta name="keywords" content="Mughlai restaurant Nagpur, halaal restaurant Nagpur, biryani Nagpur, Zafran restaurant, Jafar Nagar restaurant">
+  <meta property="og:title" content="Zafran – Royal Mughlai Restaurant, Nagpur">
+  <meta property="og:description" content="Authentic Mughlai cuisine with 100% Halaal meat. Luxury dining in Nagpur.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=1200">
+  <title>Zafran – Royal Mughlai Restaurant | Nagpur</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    /* page-specific tweaks */
+    .dishes-panel { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+    .dishes-panel[data-panel="nonveg"] { display: none; }
+    @media(max-width:768px) { .dishes-panel { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loader-logo">ZAFRAN</div>
+  <div class="loader-ornament"></div>
+  <div class="loader-sub">Royal Mughlai Experience</div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-name">ZAFRAN</span>
+      <span class="logo-tagline">Royal Mughlai</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html#reservation" class="btn btn-primary nav-cta">Book a Table</a>
+    <div class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html#reservation" class="btn btn-primary" style="margin-top:24px;">Book a Table</a>
+</nav>
+<div class="mobile-overlay"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-pattern"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Awasthi Chowk, Nagpur
+        <span class="dot"></span>
+      </div>
+      <h1 class="hero-title">
+        Zafran
+        <span class="gold-text">Royal Mughlai Flavors</span>
+      </h1>
+      <p class="hero-subtitle">
+        Step into a world where age-old recipes meet luxury dining — savour our Halaal chicken &amp; mutton, aromatic biryanis, and exquisite veg delicacies, served with royal elegance.
+      </p>
+      <div class="hero-tags">
+        <span class="hero-tag">🍗 100% Halaal Fresh Meat</span>
+        <span class="hero-tag">🌿 Veg &amp; Non-Veg</span>
+        <span class="hero-tag">✨ Luxury Cutlery</span>
+        <span class="hero-tag">🏆 Authentic Mughlai</span>
+      </div>
+      <div class="hero-btns">
+        <a href="menu.html" class="btn btn-primary">🍽️ View Menu</a>
+        <a href="contact.html#reservation" class="btn btn-outline">📅 Book Table</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights">
+  <div class="container">
+    <div class="highlights-grid stagger">
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">🥩</div>
+        <h3>100% Halaal Fresh Meat</h3>
+        <p>Every cut of chicken and mutton is sourced daily from certified Halaal butchers — freshness you can taste.</p>
+      </div>
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">🍽️</div>
+        <h3>Premium Luxury Cutlery</h3>
+        <p>Dine with handcrafted crockery and polished silverware befitting a royal Mughal court.</p>
+      </div>
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">🧼</div>
+        <h3>Impeccable Hygiene</h3>
+        <p>FSSAI-compliant kitchen with daily sanitation protocols — your safety is our highest priority.</p>
+      </div>
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">👑</div>
+        <h3>Authentic Mughlai Recipes</h3>
+        <p>Generations-old family recipes crafted with hand-ground spices, slow-cooked dum technique and pure ghee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE / STORY -->
+<section class="signature section-pad">
+  <div class="container">
+    <div class="signature-grid">
+      <div class="signature-images reveal-left">
+        <img class="sig-img-main" src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700&q=80" alt="Mughlai biryani" loading="lazy">
+        <img class="sig-img-accent" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Seekh kebabs" loading="lazy">
+        <div class="sig-badge">
+          <span class="years">10+</span>
+          <span class="yrs-text">Years of<br>Royal Taste</span>
+        </div>
+      </div>
+      <div class="signature-content reveal-right">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">A Legacy of <span>Royal Flavours</span></h2>
+        <div class="divider-ornament"><div class="diamond"></div></div>
+        <p class="section-subtitle">
+          Zafran was born from a passion to bring the grandeur of Mughal kitchens to the heart of Nagpur. Every dish tells the story of emperors, spice routes, and timeless culinary mastery.
+        </p>
+        <div class="sig-features">
+          <div class="sig-feature">
+            <div class="sig-feature-icon">🌺</div>
+            <div class="sig-feature-text">
+              <h4>Saffron-Infused Biryanis</h4>
+              <p>Our dum biryanis are slow-cooked on charcoal with Kashmiri saffron and whole spices for a fragrance that fills the room.</p>
+            </div>
+          </div>
+          <div class="sig-feature">
+            <div class="sig-feature-icon">🔥</div>
+            <div class="sig-feature-text">
+              <h4>Live Tandoor Station</h4>
+              <p>Watch our chefs work the clay tandoor — tikkas, naans, and seekh kebabs charred to smoky perfection.</p>
+            </div>
+          </div>
+          <div class="sig-feature">
+            <div class="sig-feature-icon">🌿</div>
+            <div class="sig-feature-text">
+              <h4>Fresh Daily Ingredients</h4>
+              <p>We source vegetables, herbs and meats fresh every morning. No frozen shortcuts — ever.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:36px;">
+          <a href="about.html" class="btn btn-maroon">Discover Our Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED MENU -->
+<section class="featured-menu">
+  <div class="container">
+    <span class="section-label">Chef's Selection</span>
+    <h2 class="section-title" style="color:var(--cream)">Our <span>Signature Dishes</span></h2>
+
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" data-tab="nonveg" role="tab">Non-Veg</button>
+      <button class="menu-tab" data-tab="veg" role="tab">Veg</button>
+    </div>
+
+    <!-- Non-Veg Panel -->
+    <div class="dishes-panel" data-panel="nonveg">
+      <div class="dish-card reveal">
+        <div class="dish-img">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80" alt="Chicken Biryani" loading="lazy">
+          <span class="dish-badge badge-bestseller">Best Seller</span>
+        </div>
+        <div class="dish-info">
+          <h3>Zafran Dum Biryani</h3>
+          <p>Slow-cooked saffron-infused rice layered with tender chicken, whole spices &amp; caramelised onions.</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹380</span>
+            <a href="menu.html" class="dish-order">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <div class="dish-img">
+          <img src="https://images.unsplash.com/photo-1590166216564-10bcd8bfe3f5?w=500&q=80" alt="Chicken Tikka" loading="lazy">
+          <span class="dish-badge badge-nonveg">Non-Veg</span>
+        </div>
+        <div class="dish-info">
+          <h3>Royal Chicken Tikka</h3>
+          <p>Juicy boneless chicken marinated overnight in yogurt &amp; 14 spices, charred in a live clay tandoor.</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹420</span>
+            <a href="menu.html" class="dish-order">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <div class="dish-img">
+          <img src="https://images.unsplash.com/photo-1545247181-516773cae754?w=500&q=80" alt="Mutton Rogan Josh" loading="lazy">
+          <span class="dish-badge badge-nonveg">Non-Veg</span>
+        </div>
+        <div class="dish-info">
+          <h3>Mutton Rogan Josh</h3>
+          <p>Slow-braised Kashmiri mutton curry with Ratanjot, cardamom &amp; fennel — a symphony of warmth.</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹480</span>
+            <a href="menu.html" class="dish-order">Order Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Veg Panel -->
+    <div class="dishes-panel" data-panel="veg" style="display:none">
+      <div class="dish-card reveal">
+        <div class="dish-img">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&q=80" alt="Paneer Tikka" loading="lazy">
+          <span class="dish-badge badge-bestseller">Best Seller</span>
+        </div>
+        <div class="dish-info">
+          <h3>Shahi Paneer Tikka</h3>
+          <p>Velvety cottage cheese cubes marinated in saffron cream &amp; spices, cooked to golden perfection.</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹350</span>
+            <a href="menu.html" class="dish-order">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <div class="dish-img">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&q=80" alt="Dal Makhani" loading="lazy">
+          <span class="dish-badge badge-veg">Veg</span>
+        </div>
+        <div class="dish-info">
+          <h3>Dal Makhani</h3>
+          <p>Slow-simmered black lentils &amp; kidney beans in tomato cream gravy, finished with white butter.</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹280</span>
+            <a href="menu.html" class="dish-order">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <div class="dish-img">
+          <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&q=80" alt="Veg Biryani" loading="lazy">
+          <span class="dish-badge badge-veg">Veg</span>
+        </div>
+        <div class="dish-info">
+          <h3>Royal Veg Dum Biryani</h3>
+          <p>Fragrant basmati rice layered with seasonal vegetables, fried onions &amp; Kashmiri saffron.</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹320</span>
+            <a href="menu.html" class="dish-order">Order Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-full-menu reveal">
+      <a href="menu.html" class="btn btn-outline">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number" data-target="10" data-suffix="+">0+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="80" data-suffix="+">0+</span>
+        <span class="stat-label">Signature Dishes</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="50000" data-suffix="+">0+</span>
+        <span class="stat-label">Happy Guests</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="4" data-suffix=".8★">0★</span>
+        <span class="stat-label">Google Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section-pad">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label">Guest Reviews</span>
+      <h2 class="section-title">What Our <span>Royal Guests</span> Say</h2>
+    </div>
+    <div class="testimonials-grid stagger">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The Mutton Rogan Josh was absolutely divine! Reminded me of the royal Lucknowi cuisine. The ambiance and presentation are top-notch. Zafran is my go-to for special occasions."</p>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://i.pravatar.cc/100?img=12" alt="Rahul S" loading="lazy">
+          <div class="author-info">
+            <h4>Rahul Sharma</h4>
+            <span>Google Review ★ Nagpur</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Finally a halaal restaurant in Nagpur that doesn't compromise on quality. Their Dum Biryani with saffron is unbeatable. The cutlery and table setting feels genuinely luxurious."</p>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://i.pravatar.cc/100?img=47" alt="Amina K" loading="lazy">
+          <div class="author-info">
+            <h4>Amina Khan</h4>
+            <span>Google Review ★ Nagpur</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★☆</div>
+        <p class="testimonial-text">"Visited with family and everyone loved it — even the veg options were incredibly rich and flavourful. The Shahi Paneer Tikka was the star of the evening. Will definitely return!"</p>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://i.pravatar.cc/100?img=31" alt="Priya M" loading="lazy">
+          <div class="author-info">
+            <h4>Priya Mehta</h4>
+            <span>Google Review ★ Nagpur</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section style="background:var(--maroon-dark);padding:80px 0;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,175,55,.08),transparent);"></div>
+  <div class="container" style="text-align:center;position:relative;">
+    <span class="section-label">Reserve Your Table</span>
+    <h2 class="section-title" style="color:var(--cream);margin-bottom:16px;">Dine Like <span>Royalty</span> Tonight</h2>
+    <p style="color:rgba(245,245,220,.6);max-width:500px;margin:0 auto 36px;font-family:var(--ff-body);">Tables fill up fast on weekends. Secure your reservation now and let us roll out the royal carpet for you.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html#reservation" class="btn btn-primary">📅 Book a Table</a>
+      <a href="https://wa.me/918208571913?text=I'd like to reserve a table at Zafran" target="_blank" class="btn btn-outline">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-name">ZAFRAN</span>
+        <span class="logo-tagline">Royal Mughlai Experience</span>
+        <p>Bringing the grandeur of Mughal kitchens to Nagpur. Every meal is a feast fit for royalty — crafted with love, tradition, and the finest halaal ingredients.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://wa.me/918208571913" class="social-link" aria-label="WhatsApp">💬</a>
+          <a href="#" class="social-link" aria-label="Google Maps">📍</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#reservation">Book a Table</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span class="day">Mon – Thu</span><span class="time">12pm – 11pm</span></li>
+          <li><span class="day">Fri – Sat</span><span class="time">12pm – 12am</span></li>
+          <li><span class="day">Sunday</span><span class="time">11am – 11pm</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Find Us</h4>
+        <p style="font-size:.88rem;line-height:1.8;color:rgba(245,245,220,.5);margin-bottom:16px;">
+          Plot No. 30, Ground Floor,<br>
+          Utkarsh Gruh Nirman Society,<br>
+          Awasthi Chowk, Jafar Nagar Rd,<br>
+          Near ICICI Bank,<br>
+          Nagpur, Maharashtra 440013
+        </p>
+        <a href="tel:+918208571913" style="color:var(--gold-light);font-size:.9rem;">📞 +91-8208571913</a><br>
+        <a href="mailto:info@zafran.com" style="color:var(--gold-light);font-size:.9rem;margin-top:4px;display:block;">✉️ info@zafran.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Zafran – Royal Mughlai Restaurant. All rights reserved.</span>
+      <span>Made with ♥ in Nagpur, Maharashtra</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/918208571913?text=Hello%20Zafran!%20I'd%20like%20to%20make%20a%20reservation." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <span class="tooltip">Book via WhatsApp</span>
+  💬
+</a>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
